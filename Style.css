@@ -8,7 +8,7 @@ body {
     margin: 0;
     min-height: 50vh;
     background-color: #1a1a1a !important;
-    background: url("Movies/bg.jpg") no-repeat center center fixed;
+    /*background: url("Movies/bg.jpg") no-repeat center center fixed;*/
     background-size: cover;
 }
 
@@ -52,7 +52,7 @@ header {
 .textboxes-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     margin-right: 5px; 
      
     width: 200px;
@@ -63,23 +63,25 @@ header {
     background-color: none;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding: 10px;
-    text-align: center;
+    text-align: left;
     margin-bottom: 1px; 
     border: 0px solid #ffffff; 
 }
 
 .textbox2 {
-    color: rgb(254, 0, 0);
+    color: rgb(255, 255, 255);
     font-style: oblique;
     font-size: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
 }
 
 .textbox3 {
-    color: rgb(254, 0, 0); 
+    color: rgb(255, 255, 255); 
     font-style: oblique;
     font-size: 20px; 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 
 .carrossel {
