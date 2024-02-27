@@ -96,6 +96,30 @@ img {
     height: auto;
 }
 
+@media screen and (max-width: 600px) {
+    .main-container {
+        flex-direction: column;
+        
+    }
+
+    .textboxes-container {
+        margin-right: 0;
+    }
+
+    .textbox2 {
+        font-size: 24px;
+    }
+
+    .textbox3 {
+        font-size: 16px;
+    }
+
+    .carrossel {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
 .coluna.linha {
     position: relative;
     overflow: hidden;
