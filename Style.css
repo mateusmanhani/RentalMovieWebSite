@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 50vh;
+    background-color: #1a1a1a !important;
+    background: url("Movies/bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #23232e;
+    height: 8vh;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textboxes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 5px; 
+}
+
+.textbox2,
+.textbox3 {
+    background-color: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 1px; 
+    border: 0px solid #ffffff; 
+}
+
+.textbox2 {
+    color: rgb(254, 0, 0);
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.textbox3 {
+    color: rgb(254, 0, 0); 
+    font-size: 20px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.carrossel {
+    filter: drop-shadow(0px 0px 10px #000);
+    overflow: hidden;
+    width: 400px;
+    height: 600px;
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    transition: transform 0.7s ease-in-out;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.coluna.linha {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.coluna.linha .box-itens {
+    display: flex;
+    transition: transform 0.7s ease-in-out;
+}
+
+.coluna.linha .item {
+    width: 10vw; /* Ajusta conforme necessário, 50vw significa 50% da largura da tela */
+    box-sizing: border-box;
+    flex: 0 0 auto;
+}
+
+.coluna.linha .item img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    height: auto; /* Torna a imagem proporcional à largura */
+}
+
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    background-color: #c9830ac7;
+    color: #fff;
+    border: none;
+    padding: 10px; /* Ajustado conforme necessário */
+    cursor: pointer;
+    z-index: 1; /* Certifique-se de que os botões estejam acima das imagens */
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.textbox {
+    background-color: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px;
+    color: rgb(254, 0, 0);
+    font-size: 18px;
+    text-align: left;
+}
+
+footer {
+    background-color: #23232e;
+    text-align: center;
+    padding: 5px; 
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
