@@ -8,7 +8,6 @@ body {
     margin: 0;
     min-height: 50vh;
     background-color: #1a1a1a !important;
-    /*background: url("Movies/bg.jpg") no-repeat center center fixed;*/
     background-size: cover;
 }
 
@@ -95,6 +94,7 @@ header {
 .container {
     display: flex;
     transition: transform 0.7s ease-in-out;
+    size: auto;
 }
 
 img {
