@@ -55,3 +55,7 @@ secoes.forEach((secao, index) => {
         sliderItens("next");
     });
 });
+const hamburger = document.querySelector(".hamburger");
+const nav = document.querySelector(".nav-list"); // Corrected the class name
+
+hamburger.addEventListener("click", () => nav.classList.toggle("active"));

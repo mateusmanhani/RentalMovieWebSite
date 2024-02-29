@@ -8,6 +8,7 @@ body {
     margin: 0;
     min-height: 50vh;
     background-color: #1a1a1a !important;
+    background: linear-gradient(45deg, black,grey);
     background-size: cover;
 }
 
@@ -20,11 +21,14 @@ body {
 
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between; /* Adjusted to provide space for the hamburger menu */
     align-items: center;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     background: #23232e;
     height: 8vh;
+    padding: 0 20px; /* Added padding for better spacing */
+    min-height: 8vh;
+    width: 100%;
 }
 
 .nav-list a {
@@ -52,8 +56,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: left;
-    margin-right: 5px; 
-     
+    margin-right: 5px;
     width: 200px;
 }
 
@@ -63,8 +66,8 @@ header {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding: 10px;
     text-align: left;
-    margin-bottom: 1px; 
-    border: 0px solid #ffffff; 
+    margin-bottom: 1px;
+    border: 0px solid #ffffff;
 }
 
 .textbox2 {
@@ -72,15 +75,13 @@ header {
     font-style: oblique;
     font-size: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-   
 }
 
 .textbox3 {
-    color: rgb(255, 255, 255); 
+    color: rgb(255, 255, 255);
     font-style: oblique;
-    font-size: 20px; 
+    font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
 }
 
 .carrossel {
@@ -95,6 +96,7 @@ header {
     display: flex;
     transition: transform 0.7s ease-in-out;
     size: auto;
+    
 }
 
 img {
@@ -102,27 +104,57 @@ img {
     height: auto;
 }
 
-@media screen and (max-width: 600px) {
+.hamburger {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+}
+
+.hamburger::after,
+.hamburger::before {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
     .main-container {
         flex-direction: column;
-        
+    }
+    header {
+        width: 100%; /* Adjust the minimum height for smaller screens */
     }
 
-    .textboxes-container {
-        margin-right: 0;
+    .hamburger {
+        display: block;
     }
 
-    .textbox2 {
-        font-size: 24px;
-    }
-
-    .textbox3 {
-        font-size: 16px;
-    }
-
-    .carrossel {
+    .nav-list {
+        display: none; /* Hide the regular navigation items when hamburger is visible */
+        flex-direction: column;
+        position: absolute;
+        top: 8vh;
+        left: 0;
         width: 100%;
-        margin-top: auto;
+        background: #23232e;
+        text-align: center;
+    }
+
+    .nav-list.active {
+        display: flex; /* Show the navigation items when the hamburger menu is active */
+    }
+
+    .nav-list li {
+        margin-left: 0;
+        margin-bottom: 10px;
+        width: 100%;
     }
 }
 
@@ -140,16 +172,15 @@ img {
 }
 
 .coluna.linha .item {
-    width: 10vw; /* Ajusta conforme necessário, 50vw significa 50% da largura da tela */
+    width: 10vw;
     box-sizing: border-box;
     flex: 0 0 auto;
 }
 
 .coluna.linha .item img {
-    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
-    height: auto; /* Torna a imagem proporcional à largura */
+    max-width: 100%;
+    height: auto;
 }
-
 
 .prev-btn,
 .next-btn {
@@ -158,9 +189,9 @@ img {
     background-color: #c9830ac7;
     color: #fff;
     border: none;
-    padding: 10px; /* Ajustado conforme necessário */
+    padding: 10px;
     cursor: pointer;
-    z-index: 1; /* Certifique-se de que os botões estejam acima das imagens */
+    z-index: 1;
 }
 
 .prev-btn {
@@ -183,7 +214,7 @@ img {
 footer {
     background-color: #23232e;
     text-align: center;
-    padding: 5px; 
+    padding: 5px;
     color: #fff;
     position: fixed;
     bottom: 0;
