@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 50vh;
+    background: linear-gradient(45deg, black,grey);
+    background-size: cover;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* Adjusted to provide space for the hamburger menu */
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #23232e;
+    height: 8vh;
+    padding: 0 20px; /* Added padding for better spacing */
+    min-height: 8vh;
+    width: 100%;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.nav-list .dropdown-menu{
+    background-color: #23232e;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 464px; /* Adjust the height as needed. */
+  }
+
+  .hamburger {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.hamburger::after,
+.hamburger::before {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+    header {
+        width: 100%; /* Adjust the minimum height for smaller screens */
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-list {
+        display: none; /* Hide the regular navigation items when hamburger is visible */
+        flex-direction: column;
+        position: absolute;
+        top: 8vh;
+        left: 0;
+        width: 100%;
+        background: #23232e;
+        text-align: center;
+        z-index: 999;
+    }
+
+    .nav-list.active {
+        display: flex; /* Show the navigation items when the hamburger menu is active */
+    }
+
+    .nav-list li {
+        margin-left: 0;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}

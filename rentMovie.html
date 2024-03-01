@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="customStyle.css">
+
+    <title>Rent</title>
+</head>
+<body>
+    <header>
+        <div class="logo">DublinFlix</div>
+        <button class="hamburger"></button>
+        <ul class="nav-list">
+            <li><a href="CA1 Web Dev.html">Home</a></li>
+            <li><a href="RentalMovieWebSite\rentMovie.html">Rent</a></li>
+            <li><a href="https://www.instagram.com/dublinflix/">Social</a></li>
+        
+        <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="genreDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Genres
+                </button>
+                <div class="dropdown-menu" aria-labelledby="genreDropdown">
+                    <a class="dropdown-item genre-filter" href="#" data-genre="all">All Genres</a>
+                    <a class="dropdown-item genre-filter" href="#" data-genre="action">Action</a>
+                    <a class="dropdown-item genre-filter" href="#" data-genre="adventure">Adventure</a>
+                    <a class="dropdown-item genre-filter" href="#" data-genre="drama">Drama</a>
+                    <a class="dropdown-item genre-filter" href="#" data-genre="animation">Animation</a>
+                    <a class="dropdown-item genre-filter" href="#" data-genre="sci-fi">Sci-fi</a>
+                </div>
+        </div>
+        </ul>
+    </header>
+    <!-- Modal -->
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <!-- Placeholder for the YouTube iframe without the src attribute -->
+          <iframe id="youtubeVideoIframe" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+      <div class="container mt-4">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col" data-genre="drama">
+            <div class="card shadow-sm">
+              <img src="./movieCovers/City of god.jpg" width = "348" height = "464" class="card-img-top" id="city of god" alt="Thumbnail">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/dcUOO4Itgmw?si=2bGgV4lrqSc1djHp">View Trailer</button>
+                  </div>
+                  
+                  <small class="text-body-secondary">2h 13m</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" data-genre="animation">
+            <div class="card shadow-sm">
+              <img src="./movieCovers/Brave.jfif" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/TEHWDA_6e3M?si=90G_gp0hp5OPo1Hl">View Trailer</button>
+                  </div>
+                  <small class="text-body-secondary">1h 33m</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          
+          <div class="col" data-genre="action">
+            <div class="card shadow-sm">
+              <img src="./Movies/Action/Bad Boys 2.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/UTNcOwQ2lRw?si=xTqpFM0ncIc-Pgnw">View Trailer</button>
+                  </div>
+                  <small class="text-body-secondary">2h 27m</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" data-genre="adventure">
+            <div class="card shadow-sm">
+              <img src="./Movies/Action/Dungeons & Dragons.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/IiMinixSXII?si=XttpnU51l4qLSOiw">View Trailer</button>
+                  </div>
+                  <small class="text-body-secondary">2h 14m</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="col" data-genre="sci-fi">
+            <div class="card shadow-sm">
+              <img src="./Movies/Action/Inception.jpeg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/YoHD9XEInc0?si=YSJs0FLddq4aAl1D">View Trailer</button>
+                  </div>
+                  <small class="text-body-secondary">2h 28m</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" data-genre="action">
+            <div class="card shadow-sm">
+              <img src="./Movies/Action/Jack Reacher.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/Q-oxhxD32MM?si=wHC3TQD8zBA-zR9G">View Trailer</button>
+                  </div>
+                  <small class="text-body-secondary">2h 10m</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" data-genre="sci-fi">
+            <div class="card shadow-sm">
+              <img src="./Movies/Action/Matrix.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/vKQi3bBA1y8?si=cLj2ZLQSWPXVucha">View Trailer</button>
+                  </div>
+                  <small class="text-body-secondary">2h 16m</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" data-genre="action">
+            <div class="card shadow-sm">
+              <img src="./Movies/Action/Mission - Impossible.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/avz06PDqDbM?si=FBkk9pav_qkLiutU">View Trailer</button>
+                  </div>
+                  <small class="text-body-secondary">2h 43m</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" data-genre="drama">
+            <div class="card shadow-sm">
+              <img src="./Movies/Action/The Godfather.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/UaVTIH8mujA?si=0knd1q-FgCxs4Qlx">View Trailer</button>
+                  </div>
+                  <small class="text-body-secondary">2h 55m</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" data-genre="drama">
+            <div class="card shadow-sm">
+              <img src="./Movies/Action/The woman king.jpeg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/3RDaPV_rJ1Y?si=smkayE5Vs0fjVz27">View Trailer</button>
+                  </div>
+                  <small class="text-body-secondary">2h 15m</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" data-genre="drama">
+            <div class="card shadow-sm">
+              <img src="./Movies/Action/Top_Gun_Maverick.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/qSqVVswa420?si=w2NFvfN4rJADD2j-">View Trailer</button>
+                  </div>
+                  <small class="text-body-secondary">2h 11m</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col" data-genre="drama">
+            <div class="card shadow-sm">
+              <img src="./movieCovers/Black Hawk Down.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/2GfBkC3qs78?si=_PBLqWpKLbhsez6o">View Trailer</button>
+                  </div>
+                  <small class="text-body-secondary">2h 24m</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+  
+          <div class="col" data-genre="action">
+            <div class="card shadow-sm">
+              <img src="./movieCovers/Black Panther.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/xjDjIWPwcPU?si=sURSlkfr27RmZmiw">View Trailer</button>
+                  </div>
+                  <small class="text-body-secondary">2h 15m</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col" data-genre="action">
+            <div class="card shadow-sm">
+              <img src="./movieCovers/batman.jpg" width = "348" height = "464" class="card-img-top" id="batman" alt="Thumbnail">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/mqqft2x_Aa4?si=2rd60r7X25bt4uRO">View Trailer</button>
+                  </div>
+                  <small class="text-body-secondary">2h 56m</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col" data-genre="action">
+            <div class="card shadow-sm">
+              <img src="./movieCovers/Batman - The Dark Knight.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/_PZpmTj1Q8Q?si=rfkMjfHKKb9dIgYc">View Trailer</button>
+                  </div>
+                  <small class="text-body-secondary">2h 32m</small>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col" data-genre="adventure">
+            <div class="card shadow-sm">
+              <img src="./movieCovers/Alien.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/jQ5lPt9edzQ?si=XPTgPCKzTsdTUvUD">View Trailer</button>
+                  </div>
+                  <small class="text-body-secondary">1h 57m</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col" data-genre="drama">
+            <div class="card shadow-sm">
+              <img src="./movieCovers/127 Hours.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/OlhLOWTnVoQ?si=wPkf_S4Vo1Zch9WR">View Trailer</button>
+                  </div>
+                  <small class="text-body-secondary">1h 34m</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col" data-genre="action">
+            <div class="card shadow-sm">
+              <img src="./movieCovers/007 Skyfall.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/6kw1UVovByw?si=esSFNaM6n-t5qvul">View Trailer</button>
+                  </div>
+                  <small class="text-body-secondary">2h 23m</small>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="customScript.js"></script>
+  </body>
+</html>
