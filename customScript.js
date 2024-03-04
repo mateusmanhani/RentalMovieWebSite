@@ -28,3 +28,22 @@ const hamburger = document.querySelector(".hamburger");
 const nav = document.querySelector(".nav-list"); // Corrected the class name
 
 hamburger.addEventListener("click", () => nav.classList.toggle("active"));
+
+/*Search movie by actor name*/
+
+$(document).ready(function() {
+  $('#searchInput').keyup(function() {
+      var searchText = $(this).val().toLowerCase();
+      $('.col').each(function() {
+          var actorNames = $(this).data('actor').toLowerCase().split(', '); // Split names into an array
+          var match = actorNames.some(function(name) { // Check if any name matches the search text
+              return name.includes(searchText);
+          });
+          if (match) {
+              $(this).show();
+          } else {
+              $(this).hide();
+          }
+      });
+  });
+});
