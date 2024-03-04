@@ -110,4 +110,33 @@ header {
         margin-bottom: 10px;
         width: 100%;
     }
+
+    .row {
+        margin-bottom: 10px; /* Less space on smaller screens */
+      }
 }
+
+.card {
+    height: 700px; /* Adjust based on your content */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card-text {
+    overflow: auto; /* Adds scroll to text if it overflows */
+  }
+
+  .row {
+    margin-bottom: 20px; /* Adjust the value based on your design */
+  }
+
+  .col {
+    padding-bottom: 20px; /* This will add padding to the bottom of each column */
+  }
