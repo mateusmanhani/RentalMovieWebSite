@@ -117,7 +117,7 @@ header {
 }
 
 .card {
-    height: 700px; /* Adjust based on your content */
+    height: 650px; /* Adjust based on your content */
     display: flex;
     flex-direction: column;
   }
