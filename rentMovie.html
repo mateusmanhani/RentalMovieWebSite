@@ -22,23 +22,21 @@
             <li><a href="RentalMovieWebSite\rentMovie.html">Rent</a></li>
             <li><a href="https://www.instagram.com/dublinflix/">Social</a></li>
         
-        <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="genreDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <!-- <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Genres
                 </button>
-                <div class="dropdown-menu" aria-labelledby="genreDropdown">
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item genre-filter" href="#" data-genre="all">All Genres</a>
                     <a class="dropdown-item genre-filter" href="#" data-genre="action">Action</a>
                     <a class="dropdown-item genre-filter" href="#" data-genre="comedy">Comedy</a>
                     <a class="dropdown-item genre-filter" href="#" data-genre="adventure">Adventure</a>
-                    <a class="dropdown-item genre-filter" href="#" data-genre="horror">Horror</a>
-                    <a class="dropdown-item genre-filter" href="#" data-genre="romance">Romance</a>
                     <a class="dropdown-item genre-filter" href="#" data-genre="drama">Drama</a>
                     <a class="dropdown-item genre-filter" href="#" data-genre="animation">Animation</a>
                     <a class="dropdown-item genre-filter" href="#" data-genre="sci-fi">Sci-fi</a>
                     <a class="dropdown-item genre-filter" href="#" data-genre="fantasy">Fantasy</a>
                 </div>
-        </div>
+        </div> -->
         </ul>
     </header>
     <!-- Modal -->
@@ -54,13 +52,33 @@
     </div>
 
 
-      <div class="container mt-4">
-
-        <div class="row">
-          <div class="col-12">
+    <div class="container mt-4">
+      <div class="row">
+          <div class="col-md-8">
               <input type="text" id="searchInput" class="form-control" placeholder="Search by protagonist actor name...">
           </div>
+          <div class="col-md-4">
+              <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Genres
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item genre-filter" href="#" data-genre="all">All Genres</a>
+                    <a class="dropdown-item genre-filter" href="#" data-genre="action">Action</a>
+                    <a class="dropdown-item genre-filter" href="#" data-genre="comedy">Comedy</a>
+                    <a class="dropdown-item genre-filter" href="#" data-genre="adventure">Adventure</a>
+                    <a class="dropdown-item genre-filter" href="#" data-genre="drama">Drama</a>
+                    <a class="dropdown-item genre-filter" href="#" data-genre="animation">Animation</a>
+                    <a class="dropdown-item genre-filter" href="#" data-genre="sci-fi">Sci-fi</a>
+                    <a class="dropdown-item genre-filter" href="#" data-genre="fantasy">Fantasy</a>
+                  </div>
+              </div>
+          </div>
       </div>
+  </div>
+
+
+      <div class="container mt-4"> 
 
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
           <div class="col" data-genre="drama" data-actor="Alice braga, alexandre rodriguez, jonathan haagensen,phellipe haagensen,seu jorge">
