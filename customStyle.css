@@ -140,3 +140,9 @@ header {
   .col {
     padding-bottom: 20px; /* This will add padding to the bottom of each column */
   }
+
+  /* Set modal for iFrame to the same size as the iFrame*/
+/* 
+  .custom-modal-size {
+    max-width: 560px; 
+  } */
