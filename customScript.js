@@ -15,7 +15,6 @@ $('.trailer-btn').click(function() {
     'max-width': (iframeWidth + modalPadding) + 'px' // Add some extra width for padding/borders
   });
 
-  // Optionally, you can adjust the height of the modal content if necessary
   $('.bd-example-modal-lg .modal-content').css({
     'height': 'auto', // Set to auto to adjust height based on the content
     'min-height': (iframeHeight + modalPadding) + 'px' // Ensure the modal is tall enough
