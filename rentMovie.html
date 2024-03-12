@@ -1,1034 +1,1271 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="customStyle.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="customStyle.css">
 
-    <title>Rent</title>
+  <title>Rent</title>
 </head>
+
 <body>
-    <header>
-        <div class="logo">DublinFlix</div>
-        <button class="hamburger"></button>
-        <ul class="nav-list">
-            <li><a href="CA1 Web Dev.html">Home</a></li>
-            <li><a href="RentalMovieWebSite\rentMovie.html">Rent</a></li>
-            <li><a href="https://www.instagram.com/dublinflix/">Social</a></li>
-        </ul>
-    </header>
-    <!-- Modal -->
-    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <header>
+    <div class="logo">DublinFlix</div>
+    <button class="hamburger"></button>
+    <ul class="nav-list">
+      <li><a href="CA1 Web Dev.html">Home</a></li>
+      <li><a href="RentalMovieWebSite\rentMovie.html">Rent</a></li>
+      <li><a href="https://www.instagram.com/dublinflix/">Social</a></li>
+    </ul>
+  </header>
+  <!-- Modal -->
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-body">
           <!-- Placeholder for the YouTube iframe without the src attribute -->
-          <iframe id="youtubeVideoIframe" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe id="youtubeVideoIframe" width="560" height="315" src="" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
         </div>
       </div>
     </div>
-    </div>
-
-
-    <div class="container mt-4">
-      <div class="row">
-          <div class="col-md-8">
-              <input type="text" id="searchInput" class="form-control" placeholder="Search by protagonist actor name...">
-          </div>
-          <div class="col-md-4">
-              <div class="dropdown">
-                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Genres
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item genre-filter" href="#" data-genre="all">All Genres</a>
-                    <a class="dropdown-item genre-filter" href="#" data-genre="action">Action</a>
-                    <a class="dropdown-item genre-filter" href="#" data-genre="comedy">Comedy</a>
-                    <a class="dropdown-item genre-filter" href="#" data-genre="adventure">Adventure</a>
-                    <a class="dropdown-item genre-filter" href="#" data-genre="drama">Drama</a>
-                    <a class="dropdown-item genre-filter" href="#" data-genre="animation">Animation</a>
-                    <a class="dropdown-item genre-filter" href="#" data-genre="sci-fi">Sci-fi</a>
-                    <a class="dropdown-item genre-filter" href="#" data-genre="fantasy">Fantasy</a>
-                  </div>
-              </div>
-          </div>
-      </div>
   </div>
 
 
-      <div class="container mt-4"> 
-
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-          <div class="col" data-genre="drama" data-actor="Alice braga, alexandre rodriguez, jonathan haagensen,phellipe haagensen,seu jorge">
-            <div class="card shadow-sm">
-              <img src="./Movies/Action/City of god.jpg" width = "348" height = "464" class="card-img-top" id="city of god" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">The film revolves around the, 'City of God,' a favela (or ghetto) in Rio de Janeiro, Brazil, a horrifying area where drug dealers run the community, and where children killing children is not an uncommon occurrence.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/dcUOO4Itgmw?si=2bGgV4lrqSc1djHp">View Trailer</button>
-                  </div>
-                  
-                  <small class="text-body-secondary">2h 13m</small>
-                </div>
-              </div>
-            </div>
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-8">
+        <input type="text" id="searchInput" class="form-control" placeholder="Search by protagonist actor name...">
+      </div>
+      <div class="col-md-4">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Genres
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item genre-filter" href="#" data-genre="all">All Genres</a>
+            <a class="dropdown-item genre-filter" href="#" data-genre="action">Action</a>
+            <a class="dropdown-item genre-filter" href="#" data-genre="comedy">Comedy</a>
+            <a class="dropdown-item genre-filter" href="#" data-genre="adventure">Adventure</a>
+            <a class="dropdown-item genre-filter" href="#" data-genre="drama">Drama</a>
+            <a class="dropdown-item genre-filter" href="#" data-genre="animation">Animation</a>
+            <a class="dropdown-item genre-filter" href="#" data-genre="sci-fi">Sci-fi</a>
+            <a class="dropdown-item genre-filter" href="#" data-genre="fantasy">Fantasy</a>
           </div>
-
-          <div class="col" data-genre="animation" data-actor="kelly macdonald">
-            <div class="card shadow-sm">
-              <img src="./Movies/Animation/brave.jpeg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">Merida, the impetuous but courageous daughter of Scottish King Fergus and Queen Elinor, is a skilled archer who wants to carve out her own path in life. Her defiance of an age-old tradition angers the Highland lords and leads to chaos in the kingdom.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/TEHWDA_6e3M?si=90G_gp0hp5OPo1Hl">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">1h 33m</small>
-                </div>
-              </div>
-            </div>
-          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-          
-          <div class="col" data-genre="action" data-actor="will smith,">
-            <div class="card shadow-sm">
-              <img src="./Movies/Action/Bad Boys 2.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">Two loose-cannon narcotics cops investigate the flow of Ecstasy into Florida from a Cuban drug cartel.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/UTNcOwQ2lRw?si=xTqpFM0ncIc-Pgnw">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">2h 27m</small>
-                </div>
-              </div>
-            </div>
-          </div>
+  <div class="container mt-4">
 
-          <div class="col" data-genre="adventure" data-actor="michele rodriguez, chris pine">
-            <div class="card shadow-sm">
-              <img src="./Movies/Action/Dungeons & Dragons.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">The story follows a team of misfit bandits led by Edgin the Bard and his warrior best friend, Holga, who must work together to stop an evil wizard</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/IiMinixSXII?si=XttpnU51l4qLSOiw">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">2h 14m</small>
-                </div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col" data-genre="drama"
+        data-actor="Alice braga, alexandre rodriguez, jonathan haagensen,phellipe haagensen,seu jorge">
+        <div class="card shadow-sm">
+          <img src="./Movies/Action/City of god.jpg" width="348" height="464" class="card-img-top" id="city of god"
+            alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">The film revolves around the, 'City of God,' a favela (or ghetto) in Rio de Janeiro,
+              Brazil, a horrifying area where drug dealers run the community, and where children killing children is not
+              an uncommon occurrence.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/dcUOO4Itgmw?si=2bGgV4lrqSc1djHp">View Trailer</button>
               </div>
-            </div>
-          </div>
-          
-          
-          <div class="col" data-genre="sci-fi" data-actor="leonardo DiCaprio, joseph gordon-levitt, cillan murphy, tom hardy">
-            <div class="card shadow-sm">
-              <img src="./Movies/Action/Inception.jpeg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">Dominick "Dom" Cobb and business partner Arthur are "extractors", people who perform corporate espionage using an experimental military technology to infiltrate the subconscious of their targets and extract information while experiencing shared dreaming.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/YoHD9XEInc0?si=YSJs0FLddq4aAl1D">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">2h 28m</small>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="col" data-genre="action" data-actor="tom cruise, lee child, rosamund pike">
-            <div class="card shadow-sm">
-              <img src="./Movies/Action/Jack Reacher.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">
-                  A homicide investigator digs deeper into a case involving a trained military sniper responsible for a mass shooting.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/Q-oxhxD32MM?si=wHC3TQD8zBA-zR9G">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">2h 10m</small>
-                </div>
-              </div>
+              <small class="text-body-secondary">2h 13m</small>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="col" data-genre="sci-fi" data-actor="keanu reeves, laurence fishburne">
-            <div class="card shadow-sm">
-              <img src="./Movies/Action/Matrix.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/vKQi3bBA1y8?si=cLj2ZLQSWPXVucha">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">2h 16m</small>
-                </div>
+      <div class="col" data-genre="animation" data-actor="kelly macdonald">
+        <div class="card shadow-sm">
+          <img src="./Movies/Animation/brave.jpeg" width="348" height="464" class="card-img-top" alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">Merida, the impetuous but courageous daughter of Scottish King Fergus and Queen Elinor,
+              is a skilled archer who wants to carve out her own path in life. Her defiance of an age-old tradition
+              angers the Highland lords and leads to chaos in the kingdom.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/TEHWDA_6e3M?si=90G_gp0hp5OPo1Hl">View Trailer</button>
               </div>
+              <small class="text-body-secondary">1h 33m</small>
             </div>
           </div>
-
-          <div class="col" data-genre="action" data-actor="tom cruise, rebecca ferguson, simon pegg, esai morales">
-            <div class="card shadow-sm">
-              <img src="./Movies/Action/Mission - Impossible.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">Dom Cobb and Arthur, extractors, use military tech for corporate espionage by entering targets' subconscious in shared dreams to extract information.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/avz06PDqDbM?si=FBkk9pav_qkLiutU">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">2h 43m</small>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col" data-genre="drama" data-actor="al pacino, robert de niro">
-            <div class="card shadow-sm">
-              <img src="./Movies/Action/The Godfather.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">The Godfather is set in the 1940s and takes place entirely within the world of the Corleones, a fictional New York Mafia family.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/UaVTIH8mujA?si=0knd1q-FgCxs4Qlx">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">2h 55m</small>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col" data-genre="drama" data-actor="viola davis, lashana lynch, john boyega">
-            <div class="card shadow-sm">
-              <img src="./Movies/Action/The woman king.jpeg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">The Woman King follows the emotionally epic journey of General Nanisca (Oscar®-winner Viola Davis) as she trains the next generation of recruits and readies them for battle against an enemy determined to destroy their way of life. Some things are worth fighting for. Inspired by true events..</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/3RDaPV_rJ1Y?si=smkayE5Vs0fjVz27">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">2h 15m</small>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col" data-genre="drama" data-actor="tom cruise, miles teller">
-            <div class="card shadow-sm">
-              <img src="./Movies/Action/Top_Gun_Maverick.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">Maverick confronting his past while training a group of younger Top Gun graduates, including the son of his deceased best friend, for a dangerous mission.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/qSqVVswa420?si=w2NFvfN4rJADD2j-">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">2h 11m</small>
-                </div>
-              </div>
-            </div>
-          </div>
+        </div>
+      </div>
 
 
-          <div class="col" data-genre="action" data-actor="tom hardy,tom sizemore, eric bana, josh hartnett">
-            <div class="card shadow-sm">
-              <img src="./Movies/Action/Black Hawk Down.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">The story of 160 elite U.S. soldiers who dropped into Mogadishu in October 1993 to capture two top lieutenants of a renegade warlord, but found themselves in a desperate battle with a large force of heavily armed Somalis.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/2GfBkC3qs78?si=_PBLqWpKLbhsez6o">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">2h 24m</small>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          
-  
-          <div class="col" data-genre="adventure" data-actor="james franco, aron ralston">
-            <div class="card shadow-sm">
-              <img src="./Movies/Adventure/127 Hours.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">A mountain climber becomes trapped under a boulder while canyoneering alone near Moab, Utah and resorts to desperate measures in order to survive.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/OlhLOWTnVoQ?si=Z7EZn7JRoIB3PJxg">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">2h 15m</small>
-                </div>
+      <div class="col" data-genre="action" data-actor="will smith,">
+        <div class="card shadow-sm">
+          <img src="./Movies/Action/Bad Boys 2.jpg" width="348" height="464" class="card-img-top" alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">Two loose-cannon narcotics cops investigate the flow of Ecstasy into Florida from a
+              Cuban drug cartel.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/UTNcOwQ2lRw?si=xTqpFM0ncIc-Pgnw">View Trailer</button>
               </div>
+              <small class="text-body-secondary">2h 27m</small>
             </div>
           </div>
-          <div class="col" data-genre="adventure" data-actor="zoe saldana, sam worthington, michelle rodriguez">
-            <div class="card shadow-sm">
-              <img src="./Movies/Adventure/Avatar.jpg" width = "348" height = "464" class="card-img-top" id="batman" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">The films follow a U.S. Marine named Jake Sully (Sam Worthington) who becomes part of a program in which human colonizers explore and exploit an alien world called Pandora</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/5PSNL1qE6VY?si=TmkFX03sN-Q673rJ">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">2h 42m</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col" data-genre="adventure" data-actor="Zendaya, oscar isaac, Timothée Chalamet">
-            <div class="card shadow-sm">
-              <img src="./movies/Adventure/Dune.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">the film follows Paul Atreides as his family, the noble House Atreides, is thrust into a war for the deadly and inhospitable desert planet Arrakis.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/8g18jFHCLXk?si=ltcXONFDBF0Fk5bK">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">2h 35m</small>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="col" data-genre="adventure" data-actor="Nicolas cage, diane kruger, sean bean, justin bartha">
-            <div class="card shadow-sm">
-              <img src="./Movies/Adventure/National treasure.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">Benjamin Franklin Gates, a historian, along with computer expert Riley Poole and archivist Abigail Chase, search for a massive lost Freemason treasure, to which a map is hidden on the back of the United States Declaration of Independence.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/vqUPxNT8io4?si=UaiYsaq1SbU6wr4t">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">2h 25m</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col" data-genre="adventure" data-actor="martin freeman, ian McKellen, Benedict cumberbatch"> 
-            <div class="card shadow-sm">
-              <img src="./Movies/Adventure/Hobbit.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">Bilbo Baggins (Martin Freeman) lives a simple life with his fellow hobbits in the shire, until the wizard Gandalf (Ian McKellen) arrives and convinces him to join a group of dwarves on a quest to reclaim the kingdom of Erebor.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/JTSoD4BBCJc?si=e9PI2VQR9rBJNpMR">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">2h 49m</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col" data-genre="adventure" data-actor="Dwayne Johnson, Kevin hart">
-            <div class="card shadow-sm">
-              <img src="./movies/Adventure/Jumanji the next level.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">The gang is back but the game has changed. As they return to Jumanji to rescue one of their own, they discover that nothing is as they expect. The players will have to brave parts unknown and unexplored, from the arid deserts to the snowy mountains, in order to escape the world's most dangerous game.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/rBxcF-r9Ibs?si=NcjG2Yigf_giokOm">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">2h 3m</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col" data-genre="adventure" data-actor="tye sheridan, olivia cooke">
-            <div class="card shadow-sm">
-              <img src="./movies/Adventure/ReadyPlayerOne.jpeg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">In 2045, many of Earth's population centers have become slum-like cities. To escape their desolation, people engage in the virtual reality world of the OASIS </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/cSp1dM2Vj48?si=x8PJNget7Jzew0w5">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">2h 20m</small>
-                </div>
-              </div>
-            </div>
-          </div>
+        </div>
+      </div>
 
-          <div class="col" data-genre="adventure" data-actor="Sofia Boutella, Charlie hunnam, ed skrein">
-            <div class="card shadow-sm">
-              <img src="./movies/Adventure/Rebel Moon.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">Kora, a former Imperium soldier, ventures on a quest to recruit warriors from across the galaxy to make a stand against the Imperium before they return to Veldt. </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/fhr3MzT6exg?si=QiXM08oDI6jRtz7d">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">2h 14m</small>
-                </div>
+      <div class="col" data-genre="adventure" data-actor="michele rodriguez, chris pine">
+        <div class="card shadow-sm">
+          <img src="./Movies/Action/Dungeons & Dragons.jpg" width="348" height="464" class="card-img-top"
+            alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">The story follows a team of misfit bandits led by Edgin the Bard and his warrior best
+              friend, Holga, who must work together to stop an evil wizard</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/IiMinixSXII?si=XttpnU51l4qLSOiw">View Trailer</button>
               </div>
+              <small class="text-body-secondary">2h 14m</small>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="col" data-genre="adventure" data-actor="jamie bell, daniel craig,nick frost, andy serkis">
-            <div class="card shadow-sm">
-              <img src="./movies/Adventure/The adventures of Tintin.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">Tintin, Snowy and Captain Haddock (Serkis) searches for the treasure of the Unicorn, a ship once captained by Haddock's ancestor Sir Francis Haddock, but they face dangerous pursuit by Ivan Ivanovitch Sakharine  </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/LTnCE_SaU38?si=5F-cyyKnaxQsINVK">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">1h 47m</small>
-                </div>
-              </div>
-            </div>
-          </div>
-    
-          <div class="col" data-genre="adventure" data-actor="harrison ford">
-            <div class="card shadow-sm">
-              <img src="./movies/Adventure/The call of the wild.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">The story centers on a St. Bernard/Scotch Collie dog named Buck who was stolen from his family and sent to work as a sled dog. </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/5P8R2zAhEwg?si=cWE9Q23xfqX6BFWu">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">1h 40m</small>
-                </div>
-              </div>
-            </div>
-          </div>
-    
-          <div class="col" data-genre="adventure" data-actor="Elijah wood, ian mckellen">
-            <div class="card shadow-sm">
-              <img src="./movies/Adventure/The lord of the rings.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/V75dMMIW2B4?si=HBa7_coYHjQA7WfQ">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">2h 58m</small>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="col" data-genre="animation" data-actor="jacob tremblay">
-            <div class="card shadow-sm">
-              <img src="./movies/Animation/-Luca-.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">A young boy experiences an unforgettable seaside summer on the Italian Riviera filled with gelato, pasta and endless scooter rides.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/mYfJxlgR2jw?si=GgKSMdvslmdMI78g">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">1h 35m</small>
-                </div>
+      <div class="col" data-genre="sci-fi"
+        data-actor="leonardo DiCaprio, joseph gordon-levitt, cillan murphy, tom hardy">
+        <div class="card shadow-sm">
+          <img src="./Movies/Action/Inception.jpeg" width="348" height="464" class="card-img-top" alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">Dominick "Dom" Cobb and business partner Arthur are "extractors", people who perform
+              corporate espionage using an experimental military technology to infiltrate the subconscious of their
+              targets and extract information while experiencing shared dreaming.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/YoHD9XEInc0?si=YSJs0FLddq4aAl1D">View Trailer</button>
               </div>
+              <small class="text-body-secondary">2h 28m</small>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="col" data-genre="animation" data-actor="Stephanie beatriz">
-            <div class="card shadow-sm">
-              <img src="./movies/Animation/Encanto.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">Encanto follows a multigenerational Colombian family, the Madrigals, led by a matriarch whose children and grandchildren receive magical gifts from a miracle, which they use to help the people in their rural community, called the Encanto.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/CaimKeDcudo?si=gN2fjYc-FfAvBWnM">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">1h 49m</small>
-                </div>
+      <div class="col" data-genre="action" data-actor="tom cruise, lee child, rosamund pike">
+        <div class="card shadow-sm">
+          <img src="./Movies/Action/Jack Reacher.jpg" width="348" height="464" class="card-img-top" alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">
+              A homicide investigator digs deeper into a case involving a trained military sniper responsible for a mass
+              shooting.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/Q-oxhxD32MM?si=wHC3TQD8zBA-zR9G">View Trailer</button>
               </div>
+              <small class="text-body-secondary">2h 10m</small>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="col" data-genre="animation" data-actor="Andy samberg, adam sandler">
-            <div class="card shadow-sm">
-              <img src="./movies/Animation/Hotel Transylvania 3.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">Dracula finds love with a ship captain named Ericka while embarks on a vacation on a luxury cruise liner with his family and friends</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/Ku52zNnft8k?si=nTV_pQBIWJYst_HT">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">1h 37m</small>
-                </div>
+      <div class="col" data-genre="sci-fi" data-actor="keanu reeves, laurence fishburne">
+        <div class="card shadow-sm">
+          <img src="./Movies/Action/Matrix.jpg" width="348" height="464" class="card-img-top" alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he
+              discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/vKQi3bBA1y8?si=cLj2ZLQSWPXVucha">View Trailer</button>
               </div>
+              <small class="text-body-secondary">2h 16m</small>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="col" data-genre="animation" data-actor="jay baruchel, gerrad butler">
-            <div class="card shadow-sm">
-              <img src="./movies/Animation/How to train your dragon.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">A hapless young Viking who aspires to hunt dragons becomes the unlikely friend of a young dragon himself, and learns there may be more to the creatures than he assumed.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/2BP38770KNo?si=kMj0VoXxTfK5EqQ1">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">1h 38m</small>
-                </div>
+      <div class="col" data-genre="action" data-actor="tom cruise, rebecca ferguson, simon pegg, esai morales">
+        <div class="card shadow-sm">
+          <img src="./Movies/Action/Mission - Impossible.jpg" width="348" height="464" class="card-img-top"
+            alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">Dom Cobb and Arthur, extractors, use military tech for corporate espionage by entering
+              targets' subconscious in shared dreams to extract information.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/avz06PDqDbM?si=FBkk9pav_qkLiutU">View Trailer</button>
               </div>
+              <small class="text-body-secondary">2h 43m</small>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="col" data-genre="animation" data-actor="will ferrell, ben Stiller, jonah hill">
-            <div class="card shadow-sm">
-              <img src="./movies/Animation/Megamind.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text"> after defeating his long-time nemesis Metro Man, Megamind creates a new hero to fight but must act to save the city when his "creation" becomes an even worse villain than he was.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/ead9HCX9fe4?si=YwksumSL3VwKM7VS">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">1h 35m</small>
-                </div>
+      <div class="col" data-genre="drama" data-actor="al pacino, robert de niro">
+        <div class="card shadow-sm">
+          <img src="./Movies/Action/The Godfather.jpg" width="348" height="464" class="card-img-top" alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">The Godfather is set in the 1940s and takes place entirely within the world of the
+              Corleones, a fictional New York Mafia family.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/UaVTIH8mujA?si=0knd1q-FgCxs4Qlx">View Trailer</button>
               </div>
+              <small class="text-body-secondary">2h 55m</small>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="col" data-genre="animation" data-actor="auli'i cravalho, dwayne johnson">
-            <div class="card shadow-sm">
-              <img src="./movies/Animation/Moana.jpeg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">In ancient Polynesia, when a terrible curse incurred by the demigod Maui reaches Moana's island, she answers the Ocean's call to seek out Maui to set things right.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/LKFuXETZUsI?si=LMP4Yuyw0W4z_271">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">1h 53m</small>
-                </div>
+      <div class="col" data-genre="drama" data-actor="viola davis, lashana lynch, john boyega">
+        <div class="card shadow-sm">
+          <img src="./Movies/Action/The woman king.jpeg" width="348" height="464" class="card-img-top" alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">The Woman King follows the emotionally epic journey of General Nanisca (Oscar®-winner
+              Viola Davis) as she trains the next generation of recruits and readies them for battle against an enemy
+              determined to destroy their way of life. Some things are worth fighting for. Inspired by true events..</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/3RDaPV_rJ1Y?si=smkayE5Vs0fjVz27">View Trailer</button>
               </div>
+              <small class="text-body-secondary">2h 15m</small>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="col" data-genre="animation" data-actor="chris pratt, tom holland">
-            <div class="card shadow-sm">
-              <img src="./movies/Animation/Onward.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">
-                  In a suburban fantasy world, two teenage elf brothers, Ian and Barley Lightfoot, go on a journey to discover if there is still a little magic left out there in order to spend one last day with their father, who died when they were too young to remember him.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/x8DKg_fsacM?si=ab7HUJq6EWC-qsGx">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">1h 42m</small>
-                </div>
+      <div class="col" data-genre="drama" data-actor="tom cruise, miles teller">
+        <div class="card shadow-sm">
+          <img src="./Movies/Action/Top_Gun_Maverick.jpg" width="348" height="464" class="card-img-top" alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">Maverick confronting his past while training a group of younger Top Gun graduates,
+              including the son of his deceased best friend, for a dangerous mission.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/qSqVVswa420?si=w2NFvfN4rJADD2j-">View Trailer</button>
               </div>
+              <small class="text-body-secondary">2h 11m</small>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="col" data-genre="animation" data-actor="benedict cumberbatch, pharrel williams">
-            <div class="card shadow-sm">
-              <img src="./movies/Animation/The Grinch.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">The Grinch and his loyal dog, Max, live a solitary existence inside a cave on Mount Crumpet. His main source of aggravation comes during Christmastime when his neighbors in Whoville celebrate the holidays with a bang.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/vjnqABgxfO0?si=Q7DqqA7XP0Ivr4Oh">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">1h 30m</small>
-                </div>
+
+      <div class="col" data-genre="action" data-actor="tom hardy,tom sizemore, eric bana, josh hartnett">
+        <div class="card shadow-sm">
+          <img src="./Movies/Action/Black Hawk Down.jpg" width="348" height="464" class="card-img-top" alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">The story of 160 elite U.S. soldiers who dropped into Mogadishu in October 1993 to
+              capture two top lieutenants of a renegade warlord, but found themselves in a desperate battle with a large
+              force of heavily armed Somalis.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/2GfBkC3qs78?si=_PBLqWpKLbhsez6o">View Trailer</button>
               </div>
+              <small class="text-body-secondary">2h 24m</small>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="col" data-genre="animation" data-actor="craig nelson, holly hunter, brad bird">
-            <div class="card shadow-sm">
-              <img src="./movies/Animation/The incredibles.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">The Grinch and his loyal dog, Max, live a solitary existence inside a cave on Mount Crumpet. His main source of aggravation comes during Christmastime when his neighbors in Whoville celebrate the holidays with a bang.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/-UaGUdNJdRQ?si=cK0q6_t2HQy6_0e9">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">1h 45m</small>
-                </div>
+
+
+      <div class="col" data-genre="adventure" data-actor="james franco, aron ralston">
+        <div class="card shadow-sm">
+          <img src="./Movies/Adventure/127 Hours.jpg" width="348" height="464" class="card-img-top" alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">A mountain climber becomes trapped under a boulder while canyoneering alone near Moab,
+              Utah and resorts to desperate measures in order to survive.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/OlhLOWTnVoQ?si=Z7EZn7JRoIB3PJxg">View Trailer</button>
               </div>
+              <small class="text-body-secondary">2h 15m</small>
             </div>
           </div>
-
-          <div class="col" data-genre="animation" data-actor="lin-manuel miranda">
-            <div class="card shadow-sm">
-              <img src="./movies/Animation/Vivo.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">Parents need to know that Vivo is a touching animated musical about a one-of-a-kind singing kinkajou (voiced by Lin-Manuel Miranda) who has a great life in Havana with acclaimed aging bandleader Andrés </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/BOe8L69JpVI?si=0_ZtrVDDFYwwvWtM">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">1h 43m</small>
-                </div>
+        </div>
+      </div>
+      <div class="col" data-genre="adventure" data-actor="zoe saldana, sam worthington, michelle rodriguez">
+        <div class="card shadow-sm">
+          <img src="./Movies/Adventure/Avatar.jpg" width="348" height="464" class="card-img-top" id="batman"
+            alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">The films follow a U.S. Marine named Jake Sully (Sam Worthington) who becomes part of a
+              program in which human colonizers explore and exploit an alien world called Pandora</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/5PSNL1qE6VY?si=TmkFX03sN-Q673rJ">View Trailer</button>
               </div>
+              <small class="text-body-secondary">2h 42m</small>
             </div>
           </div>
-
-          <div class="col" data-genre="animation" data-actor="ben burtt">
-            <div class="card shadow-sm">
-              <img src="./movies/Animation/Wall.e.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">The film follows a solitary robot named WALL-E on a future, uninhabitable, deserted Earth in 2805, left to clean up garbage. He is visited by a robot called EVE sent from the starship Axiom, with whom he falls in love and pursues across the galaxy.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/CZ1CATNbXg0?si=RseKq90XidwmT6co">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">1h 38m</small>
-                </div>
+        </div>
+      </div>
+      <div class="col" data-genre="adventure" data-actor="Zendaya, oscar isaac, Timothée Chalamet">
+        <div class="card shadow-sm">
+          <img src="./movies/Adventure/Dune.jpg" width="348" height="464" class="card-img-top" alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">the film follows Paul Atreides as his family, the noble House Atreides, is thrust into
+              a war for the deadly and inhospitable desert planet Arrakis.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/8g18jFHCLXk?si=ltcXONFDBF0Fk5bK">View Trailer</button>
               </div>
+              <small class="text-body-secondary">2h 35m</small>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="col" data-genre="comedy" data-actor="jonah hill, channing tatum, dave franco, rob riggle, holly robinson">
-            <div class="card shadow-sm">
-              <img src="./movies/Comedy/21 Jump Street.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">A pair of underachieving cops are sent back to a local high school to blend in and bring down a synthetic drug ring.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/RLoKtb4c4W0?si=FqmQhKt6LKG5trEH">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">1h 49m</small>
-                </div>
+      <div class="col" data-genre="adventure" data-actor="Nicolas cage, diane kruger, sean bean, justin bartha">
+        <div class="card shadow-sm">
+          <img src="./Movies/Adventure/National treasure.jpg" width="348" height="464" class="card-img-top"
+            alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">Benjamin Franklin Gates, a historian, along with computer expert Riley Poole and
+              archivist Abigail Chase, search for a massive lost Freemason treasure, to which a map is hidden on the
+              back of the United States Declaration of Independence.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/vqUPxNT8io4?si=UaiYsaq1SbU6wr4t">View Trailer</button>
               </div>
+              <small class="text-body-secondary">2h 25m</small>
             </div>
           </div>
-
-          <div class="col" data-genre="comedy" data-actor="jason biggs, sean william scott, alyson hannigan, chris klein">
-            <div class="card shadow-sm">
-              <img src="./movies/Comedy/American PIE.jfif" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">The story follows a group of high school friends that pledge to lose their virginity before they graduate, and the shenanigans that they get into along the way</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/Sithad108Og?si=2lRwWYdFJCyVu6mN">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">1h 35m</small>
-                </div>
+        </div>
+      </div>
+      <div class="col" data-genre="adventure" data-actor="martin freeman, ian McKellen, Benedict cumberbatch">
+        <div class="card shadow-sm">
+          <img src="./Movies/Adventure/Hobbit.jpg" width="348" height="464" class="card-img-top" alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">Bilbo Baggins (Martin Freeman) lives a simple life with his fellow hobbits in the
+              shire, until the wizard Gandalf (Ian McKellen) arrives and convinces him to join a group of dwarves on a
+              quest to reclaim the kingdom of Erebor.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/JTSoD4BBCJc?si=e9PI2VQR9rBJNpMR">View Trailer</button>
               </div>
+              <small class="text-body-secondary">2h 49m</small>
             </div>
           </div>
-
-          <div class="col" data-genre="comedy" data-actor="mike myers, seth green">
-            <div class="card shadow-sm">
-              <img src="./movies/Comedy/Austin power.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">A world-class playboy and part-time secret agent from the 1960s emerges after thirty years in a cryogenic state to battle with his nemesis Dr. Evil.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/5vsANcS4Ml8?si=1J5Hz8rwgwYM6uQ8">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">1h 38m</small>
-                </div>
+        </div>
+      </div>
+      <div class="col" data-genre="adventure" data-actor="Dwayne Johnson, Kevin hart">
+        <div class="card shadow-sm">
+          <img src="./movies/Adventure/Jumanji the next level.jpg" width="348" height="464" class="card-img-top"
+            alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">The gang is back but the game has changed. As they return to Jumanji to rescue one of
+              their own, they discover that nothing is as they expect. The players will have to brave parts unknown and
+              unexplored, from the arid deserts to the snowy mountains, in order to escape the world's most dangerous
+              game.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/rBxcF-r9Ibs?si=NcjG2Yigf_giokOm">View Trailer</button>
               </div>
+              <small class="text-body-secondary">2h 3m</small>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="col" data-genre="comedy" data-actor="sacha baron cohen">
-            <div class="card shadow-sm">
-              <img src="./movies/Comedy/Borat.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">A fictional Kazakhstani journalist who travels through the United States to make a documentary which features real-life interactions with Americans.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/dL6_G1z6ymw?si=aERYnv-planmLxx_">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">1h 24m</small>
-                </div>
+      <div class="col" data-genre="adventure" data-actor="tye sheridan, olivia cooke">
+        <div class="card shadow-sm">
+          <img src="./movies/Adventure/ReadyPlayerOne.jpeg" width="348" height="464" class="card-img-top"
+            alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">In 2045, many of Earth's population centers have become slum-like cities. To escape
+              their desolation, people engage in the virtual reality world of the OASIS </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/cSp1dM2Vj48?si=x8PJNget7Jzew0w5">View Trailer</button>
               </div>
+              <small class="text-body-secondary">2h 20m</small>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="col" data-genre="comedy" data-actor="Eddie Murphy">
-            <div class="card shadow-sm">
-              <img src="./movies/Comedy/Eddie Murphy coming to america.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">Eddie Murphy plays Akeem Joffer, the crown prince of the fictional African nation of Zamunda who travels to the United States in the hopes of finding a woman he can marry and will love him for who he is, not for his status or for having been trained to please him.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/KFroCRDXw5E?si=ObzIZkhRa5juab4y">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">1h 56m</small>
-                </div>
+      <div class="col" data-genre="adventure" data-actor="Sofia Boutella, Charlie hunnam, ed skrein">
+        <div class="card shadow-sm">
+          <img src="./movies/Adventure/Rebel Moon.jpg" width="348" height="464" class="card-img-top" alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">Kora, a former Imperium soldier, ventures on a quest to recruit warriors from across
+              the galaxy to make a stand against the Imperium before they return to Veldt. </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/fhr3MzT6exg?si=QiXM08oDI6jRtz7d">View Trailer</button>
               </div>
+              <small class="text-body-secondary">2h 14m</small>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="col" data-genre="comedy" data-actor="bradley cooper, ed helms, ken jeong, zach galifianakis">
-            <div class="card shadow-sm">
-              <img src="./movies/Comedy/Hangover.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">The story was about three friends who lose the groom at his Las Vegas bachelor party and then must retrace their steps to figure out what happened.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/tlize92ffnY?si=YV_9mKujk9gXpFKn">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">1h 40m</small>
-                </div>
+      <div class="col" data-genre="adventure" data-actor="jamie bell, daniel craig,nick frost, andy serkis">
+        <div class="card shadow-sm">
+          <img src="./movies/Adventure/The adventures of Tintin.jpg" width="348" height="464" class="card-img-top"
+            alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">Tintin, Snowy and Captain Haddock (Serkis) searches for the treasure of the Unicorn, a
+              ship once captained by Haddock's ancestor Sir Francis Haddock, but they face dangerous pursuit by Ivan
+              Ivanovitch Sakharine </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/LTnCE_SaU38?si=5F-cyyKnaxQsINVK">View Trailer</button>
               </div>
+              <small class="text-body-secondary">1h 47m</small>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="col" data-genre="comedy" data-actor="simon pegg, nick frost">
-            <div class="card shadow-sm">
-              <img src="./movies/Comedy/Hot Fuzz.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">The film centres on two cops investigating a series of mysterious gruesome deaths in a West Country village</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/ayTnvVpj9t4?si=gyLkFdLMJ87WxgVe">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">2h 1m</small>
-                </div>
+      <div class="col" data-genre="adventure" data-actor="harrison ford">
+        <div class="card shadow-sm">
+          <img src="./movies/Adventure/The call of the wild.jpg" width="348" height="464" class="card-img-top"
+            alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">The story centers on a St. Bernard/Scotch Collie dog named Buck who was stolen from his
+              family and sent to work as a sled dog. </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/5P8R2zAhEwg?si=cWE9Q23xfqX6BFWu">View Trailer</button>
               </div>
+              <small class="text-body-secondary">1h 40m</small>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="col" data-genre="comedy" data-actor="ana de armas, daniel craig, chris evans">
-            <div class="card shadow-sm">
-              <img src="./movies/Comedy/Knives out.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">Wealthy crime novelist Harlan Thrombey (Christopher Plummer) invites his family to his mansion for his 85th birthday party. The next morning, Harlan's housekeeper Fran (Edi Patterson) finds him dead, apparently having slit his own throat.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/qGqiHJTsRkQ?si=YW-75vBpbLHqeROh">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">2h 10m</small>
-                </div>
+      <div class="col" data-genre="adventure" data-actor="Elijah wood, ian mckellen">
+        <div class="card shadow-sm">
+          <img src="./movies/Adventure/The lord of the rings.jpg" width="348" height="464" class="card-img-top"
+            alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">A meek Hobbit from the Shire and eight companions set out on a journey to destroy the
+              powerful One Ring and save Middle-earth from the Dark Lord Sauron.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/V75dMMIW2B4?si=HBa7_coYHjQA7WfQ">View Trailer</button>
               </div>
+              <small class="text-body-secondary">2h 58m</small>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="col" data-genre="comedy" data-actor="james franco, seth rogen">
-            <div class="card shadow-sm">
-              <img src="./movies/Comedy/The Interview.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">Dave Skylark and producer Aaron Rapoport run the celebrity tabloid show "Skylark Tonight." When they land an interview with a surprise fan, North Korean dictator Kim Jong-Un, they are recruited by the CIA to turn their trip to Pyongyang into an assassination mission.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/Mj3uHftd5FQ?si=gSbrPGu51YXrI6co">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">1h 52m</small>
-                </div>
+      <div class="col" data-genre="animation" data-actor="jacob tremblay">
+        <div class="card shadow-sm">
+          <img src="./movies/Animation/-Luca-.jpg" width="348" height="464" class="card-img-top" alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">A young boy experiences an unforgettable seaside summer on the Italian Riviera filled
+              with gelato, pasta and endless scooter rides.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/mYfJxlgR2jw?si=GgKSMdvslmdMI78g">View Trailer</button>
               </div>
+              <small class="text-body-secondary">1h 35m</small>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="col" data-genre="comedy" data-actor="ben stiller, robert downey jr, tom cruise">
-            <div class="card shadow-sm">
-              <img src="./movies/Comedy/Tropic thunder.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">Jackson as a group of prima donna actors making a Vietnam War film. When their frustrated director (Steve Coogan) drops them in the middle of a jungle and dies in an accident, they are forced to rely on their acting skills to survive the real action and danger.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/9Pl4JNnqNaE?si=SSFenbqBj-BFpHUk">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">1h 47m</small>
-                </div>
+      <div class="col" data-genre="animation" data-actor="Stephanie beatriz">
+        <div class="card shadow-sm">
+          <img src="./movies/Animation/Encanto.jpg" width="348" height="464" class="card-img-top" alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">Encanto follows a multigenerational Colombian family, the Madrigals, led by a matriarch
+              whose children and grandchildren receive magical gifts from a miracle, which they use to help the people
+              in their rural community, called the Encanto.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/CaimKeDcudo?si=gN2fjYc-FfAvBWnM">View Trailer</button>
               </div>
+              <small class="text-body-secondary">1h 49m</small>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="col" data-genre="comedy" data-actor="vince vaughn, owen wilson">
-            <div class="card shadow-sm">
-              <img src="./movies/Comedy/Wedding Crashers.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">Jeremy (Vince Vaughn) and John (Owen Wilson) are divorce mediators who spend their free time crashing wedding receptions. For the irrepressible duo, there are few better ways to drink for free and bed vulnerable women.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/GnD48PD84-8?si=pRKCNmBqSQbGDrvh">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">1h 59m</small>
-                </div>
+
+
+      <div class="col" data-genre="animation" data-actor="Andy samberg, adam sandler">
+        <div class="card shadow-sm">
+          <img src="./movies/Animation/Hotel Transylvania 3.jpg" width="348" height="464" class="card-img-top"
+            alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">Dracula finds love with a ship captain named Ericka while embarks on a vacation on a
+              luxury cruise liner with his family and friends</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/Ku52zNnft8k?si=nTV_pQBIWJYst_HT">View Trailer</button>
               </div>
+              <small class="text-body-secondary">1h 37m</small>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="col" data-genre="fantasy" data-actor="Madilyn kellam, madelyn kientz">
-            <div class="card shadow-sm">
-              <img src="./movies/Fantasy/Fantastic pet.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">
-                  Scott and Emily are at his grandmother's home when they suddenly discover a mysterious creature. They have a mission: with the help of an ancient spell book, they'll gather some ingredients to make a magic dust to save their world.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/GBK8bTI-xc0?si=b3uYy-Pf8FnR_uR8">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">1h 25m</small>
-                </div>
+      <div class="col" data-genre="animation" data-actor="jay baruchel, gerrad butler">
+        <div class="card shadow-sm">
+          <img src="./movies/Animation/How to train your dragon.jpg" width="348" height="464" class="card-img-top"
+            alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">A hapless young Viking who aspires to hunt dragons becomes the unlikely friend of a
+              young dragon himself, and learns there may be more to the creatures than he assumed.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/2BP38770KNo?si=kMj0VoXxTfK5EqQ1">View Trailer</button>
               </div>
+              <small class="text-body-secondary">1h 38m</small>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="col" data-genre="fantasy" data-actor="Daniel radcliffe, emma watson, rupert grint">
-            <div class="card shadow-sm">
-              <img src="./movies/Fantasy/Harry Potter and the order of the fenix.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">During the summer holidays, Harry Potter and his cousin Dudley are attacked by Dementors. Harry uses magic to defeat them but his aunt and uncle blame him for the attack. Harry meets the Order of the Phoenix, a group of good witches and wizards who want to fight the Death Eaters.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/WIj9DYJ5EKk?si=tSV-Zv-8B7qs1nIS">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">2h 18m</small>
-                </div>
+      <div class="col" data-genre="animation" data-actor="will ferrell, ben Stiller, jonah hill">
+        <div class="card shadow-sm">
+          <img src="./movies/Animation/Megamind.jpg" width="348" height="464" class="card-img-top" alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text"> after defeating his long-time nemesis Metro Man, Megamind creates a new hero to fight
+              but must act to save the city when his "creation" becomes an even worse villain than he was.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/ead9HCX9fe4?si=YwksumSL3VwKM7VS">View Trailer</button>
               </div>
+              <small class="text-body-secondary">1h 35m</small>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="col" data-genre="fantasy" data-actor="jennifer lawrence, josh hutcherson, woody harrelson">
-            <div class="card shadow-sm">
-              <img src="./movies/Fantasy/Hunger games.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">As punishment for a failed rebellion many years before, each district must annually choose two tributes, one boy and one girl between the ages of twelve and eighteen, to fight to the death in the annual Hunger Games, until one victor remains.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/PbA63a7H0bo?si=FyowADY29eEFBhuU">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">2h 22m</small>
-                </div>
+      <div class="col" data-genre="animation" data-actor="auli'i cravalho, dwayne johnson">
+        <div class="card shadow-sm">
+          <img src="./movies/Animation/Moana.jpeg" width="348" height="464" class="card-img-top" alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">In ancient Polynesia, when a terrible curse incurred by the demigod Maui reaches
+              Moana's island, she answers the Ocean's call to seek out Maui to set things right.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/LKFuXETZUsI?si=LMP4Yuyw0W4z_271">View Trailer</button>
               </div>
+              <small class="text-body-secondary">1h 53m</small>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="col" data-genre="fantasy" data-actor="Anna kendrick, james corden, jhonny depp, billy magnussen, Meryl streep">
-            <div class="card shadow-sm">
-              <img src="./movies/Fantasy/Into the woods.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">The film is centered on a childless couple who set out to end a curse placed on them by a vengeful witch, and the characters are forced to experience the unintended consequences of their actions.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/sNVGDZHRJXM?si=i66VTIAqjR0v5g0V">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">2h 5m</small>
-                </div>
+      <div class="col" data-genre="animation" data-actor="chris pratt, tom holland">
+        <div class="card shadow-sm">
+          <img src="./movies/Animation/Onward.jpg" width="348" height="464" class="card-img-top" alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">
+              In a suburban fantasy world, two teenage elf brothers, Ian and Barley Lightfoot, go on a journey to
+              discover if there is still a little magic left out there in order to spend one last day with their father,
+              who died when they were too young to remember him.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/x8DKg_fsacM?si=ab7HUJq6EWC-qsGx">View Trailer</button>
               </div>
+              <small class="text-body-secondary">1h 42m</small>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="col" data-genre="fantasy" data-actor="Sean Bean, Famke Janssen, Nick Stahl">
-            <div class="card shadow-sm">
-              <img src="./movies/Fantasy/Knights of the zodiac.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">Based on the international anime sensation, Knights of the Zodiac brings the Saint Seiya saga to the big screen in live-action for the first time.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/Sko0o_KoBHY?si=MPeqWCqWMpa8hp2j">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">1h 52m</small>
-                </div>
+      <div class="col" data-genre="animation" data-actor="benedict cumberbatch, pharrel williams">
+        <div class="card shadow-sm">
+          <img src="./movies/Animation/The Grinch.jpg" width="348" height="464" class="card-img-top" alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">The Grinch and his loyal dog, Max, live a solitary existence inside a cave on Mount
+              Crumpet. His main source of aggravation comes during Christmastime when his neighbors in Whoville
+              celebrate the holidays with a bang.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/vjnqABgxfO0?si=Q7DqqA7XP0Ivr4Oh">View Trailer</button>
               </div>
+              <small class="text-body-secondary">1h 30m</small>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="col" data-genre="fantasy" data-actor="Paul Giamatti,Bryce Dallas Howard ">
-            <div class="card shadow-sm">
-              <img src="./movies/Fantasy/Lady in the water.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">When Cleveland Heep (Paul Giamatti) rescues an enigmatic young woman (Bryce Dallas Howard) from danger, little does he know that she is a character from a bedtime story, who is trying to return to her world. Distributor: Warner Bros.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/pKR1mfrfGAo?si=qBQ2PWnrEOZm-Lvb">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">1h 50m</small>
-                </div>
+      <div class="col" data-genre="animation" data-actor="craig nelson, holly hunter, brad bird">
+        <div class="card shadow-sm">
+          <img src="./movies/Animation/The incredibles.jpg" width="348" height="464" class="card-img-top"
+            alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">The Grinch and his loyal dog, Max, live a solitary existence inside a cave on Mount
+              Crumpet. His main source of aggravation comes during Christmastime when his neighbors in Whoville
+              celebrate the holidays with a bang.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/-UaGUdNJdRQ?si=cK0q6_t2HQy6_0e9">View Trailer</button>
               </div>
+              <small class="text-body-secondary">1h 45m</small>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="col" data-genre="fantasy" data-actor="Robert Sheehan,Ronan Raftery">
-            <div class="card shadow-sm">
-              <img src="./movies/Fantasy/Mortal engines.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">In a post-apocalyptic world where cities ride on wheels and consume each other to survive, two people meet in London and try to stop a conspiracy.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/IRsFc2gguEg?si=AotkOcQmnAxfMlLo">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">2h 8m</small>
-                </div>
+      <div class="col" data-genre="animation" data-actor="lin-manuel miranda">
+        <div class="card shadow-sm">
+          <img src="./movies/Animation/Vivo.jpg" width="348" height="464" class="card-img-top" alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">Parents need to know that Vivo is a touching animated musical about a one-of-a-kind
+              singing kinkajou (voiced by Lin-Manuel Miranda) who has a great life in Havana with acclaimed aging
+              bandleader Andrés </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/BOe8L69JpVI?si=0_ZtrVDDFYwwvWtM">View Trailer</button>
               </div>
+              <small class="text-body-secondary">1h 43m</small>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="col" data-genre="fantasy" data-actor="Doug Jones">
-            <div class="card shadow-sm">
-              <img src="./movies/Fantasy/Pan's Labyrinth.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">In the Falangist Spain of 1944, the bookish young stepdaughter of a sadistic army officer escapes into an eerie but captivating fantasy world.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/jVZRnnVSQ8k?si=HreH3n9lqeuMSrg5">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">1h 59m</small>
-                </div>
+      <div class="col" data-genre="animation" data-actor="ben burtt">
+        <div class="card shadow-sm">
+          <img src="./movies/Animation/Wall.e.jpg" width="348" height="464" class="card-img-top" alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">The film follows a solitary robot named WALL-E on a future, uninhabitable, deserted
+              Earth in 2805, left to clean up garbage. He is visited by a robot called EVE sent from the starship Axiom,
+              with whom he falls in love and pursues across the galaxy.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/CZ1CATNbXg0?si=RseKq90XidwmT6co">View Trailer</button>
               </div>
+              <small class="text-body-secondary">1h 38m</small>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="col" data-genre="fantasy" data-actor="Emma Watson, Dan Stevens">
-            <div class="card shadow-sm">
-              <img src="./movies/Fantasy/The beauty and the beast.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">A young Prince, imprisoned in the form of a Beast (Dan Stevens), can be freed only by true love. What may be his only opportunity arrives when he meets Belle (Emma Watson), the only human girl to ever visit the castle since it was enchanted.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/OvW_L8sTu5E?si=7kv6zOFFjBlSO5nT">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">1h 24m</small>
-                </div>
+      <div class="col" data-genre="comedy"
+        data-actor="jonah hill, channing tatum, dave franco, rob riggle, holly robinson">
+        <div class="card shadow-sm">
+          <img src="./movies/Comedy/21 Jump Street.jpg" width="348" height="464" class="card-img-top" alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">A pair of underachieving cops are sent back to a local high school to blend in and
+              bring down a synthetic drug ring.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/RLoKtb4c4W0?si=FqmQhKt6LKG5trEH">View Trailer</button>
               </div>
+              <small class="text-body-secondary">1h 49m</small>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="col" data-genre="fantasy" data-actor="Louis Ashbourne Serkis">
-            <div class="card shadow-sm">
-              <img src="./movies/Fantasy/The kid who would be king.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">The plot follows a young boy who finds King Arthur's legendary sword Excalibur and must use it to stop an ancient enchantress from enslaving the world with help from his classmates (and former bullies) from school.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/Cg-h8TwQCgs?si=1MeIRW308MlUUOVW">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">2h</small>
-                </div>
+      <div class="col" data-genre="comedy" data-actor="jason biggs, sean william scott, alyson hannigan, chris klein">
+        <div class="card shadow-sm">
+          <img src="./movies/Comedy/American PIE.jfif" width="348" height="464" class="card-img-top" alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">The story follows a group of high school friends that pledge to lose their virginity
+              before they graduate, and the shenanigans that they get into along the way</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/Sithad108Og?si=2lRwWYdFJCyVu6mN">View Trailer</button>
               </div>
+              <small class="text-body-secondary">1h 35m</small>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="col" data-genre="fantasy" data-actor="Sam Everingham">
-            <div class="card shadow-sm">
-              <img src="./movies/Fantasy/The secret kingdom.jpg" width = "348" height = "464" class="card-img-top" alt="Thumbnail">
-              <div class="card-body">
-                <p class="card-text">Hidden beneath their bedroom floor lies a land of enchantment, which must be protected from an ancient enemy </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
-                    <!-- Add data-trailer-url attribute with the movie's trailer URL -->
-                    <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal" data-target=".bd-example-modal-lg" data-trailer-url="https://www.youtube.com/embed/JTY06xlVGHA?si=Pj2OzWjrG5rW8hSb">View Trailer</button>
-                  </div>
-                  <small class="text-body-secondary">1h 59m</small>
-                </div>
+      <div class="col" data-genre="comedy" data-actor="mike myers, seth green">
+        <div class="card shadow-sm">
+          <img src="./movies/Comedy/Austin power.jpg" width="348" height="464" class="card-img-top" alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">A world-class playboy and part-time secret agent from the 1960s emerges after thirty
+              years in a cryogenic state to battle with his nemesis Dr. Evil.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/5vsANcS4Ml8?si=1J5Hz8rwgwYM6uQ8">View Trailer</button>
               </div>
+              <small class="text-body-secondary">1h 38m</small>
             </div>
           </div>
-    
+        </div>
+      </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="customScript.js"></script>
-  </body>
+      <div class="col" data-genre="comedy" data-actor="sacha baron cohen">
+        <div class="card shadow-sm">
+          <img src="./movies/Comedy/Borat.jpg" width="348" height="464" class="card-img-top" alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">A fictional Kazakhstani journalist who travels through the United States to make a
+              documentary which features real-life interactions with Americans.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/dL6_G1z6ymw?si=aERYnv-planmLxx_">View Trailer</button>
+              </div>
+              <small class="text-body-secondary">1h 24m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col" data-genre="comedy" data-actor="Eddie Murphy">
+        <div class="card shadow-sm">
+          <img src="./movies/Comedy/Eddie Murphy coming to america.jpg" width="348" height="464" class="card-img-top"
+            alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">Eddie Murphy plays Akeem Joffer, the crown prince of the fictional African nation of
+              Zamunda who travels to the United States in the hopes of finding a woman he can marry and will love him
+              for who he is, not for his status or for having been trained to please him.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/KFroCRDXw5E?si=ObzIZkhRa5juab4y">View Trailer</button>
+              </div>
+              <small class="text-body-secondary">1h 56m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col" data-genre="comedy" data-actor="bradley cooper, ed helms, ken jeong, zach galifianakis">
+        <div class="card shadow-sm">
+          <img src="./movies/Comedy/Hangover.jpg" width="348" height="464" class="card-img-top" alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">The story was about three friends who lose the groom at his Las Vegas bachelor party
+              and then must retrace their steps to figure out what happened.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/tlize92ffnY?si=YV_9mKujk9gXpFKn">View Trailer</button>
+              </div>
+              <small class="text-body-secondary">1h 40m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col" data-genre="comedy" data-actor="simon pegg, nick frost">
+        <div class="card shadow-sm">
+          <img src="./movies/Comedy/Hot Fuzz.jpg" width="348" height="464" class="card-img-top" alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">The film centres on two cops investigating a series of mysterious gruesome deaths in a
+              West Country village</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/ayTnvVpj9t4?si=gyLkFdLMJ87WxgVe">View Trailer</button>
+              </div>
+              <small class="text-body-secondary">2h 1m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col" data-genre="comedy" data-actor="ana de armas, daniel craig, chris evans">
+        <div class="card shadow-sm">
+          <img src="./movies/Comedy/Knives out.jpg" width="348" height="464" class="card-img-top" alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">Wealthy crime novelist Harlan Thrombey (Christopher Plummer) invites his family to his
+              mansion for his 85th birthday party. The next morning, Harlan's housekeeper Fran (Edi Patterson) finds him
+              dead, apparently having slit his own throat.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/qGqiHJTsRkQ?si=YW-75vBpbLHqeROh">View Trailer</button>
+              </div>
+              <small class="text-body-secondary">2h 10m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col" data-genre="comedy" data-actor="james franco, seth rogen">
+        <div class="card shadow-sm">
+          <img src="./movies/Comedy/The Interview.jpg" width="348" height="464" class="card-img-top" alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">Dave Skylark and producer Aaron Rapoport run the celebrity tabloid show "Skylark
+              Tonight." When they land an interview with a surprise fan, North Korean dictator Kim Jong-Un, they are
+              recruited by the CIA to turn their trip to Pyongyang into an assassination mission.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/Mj3uHftd5FQ?si=gSbrPGu51YXrI6co">View Trailer</button>
+              </div>
+              <small class="text-body-secondary">1h 52m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col" data-genre="comedy" data-actor="ben stiller, robert downey jr, tom cruise">
+        <div class="card shadow-sm">
+          <img src="./movies/Comedy/Tropic thunder.jpg" width="348" height="464" class="card-img-top" alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">Jackson as a group of prima donna actors making a Vietnam War film. When their
+              frustrated director (Steve Coogan) drops them in the middle of a jungle and dies in an accident, they are
+              forced to rely on their acting skills to survive the real action and danger.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/9Pl4JNnqNaE?si=SSFenbqBj-BFpHUk">View Trailer</button>
+              </div>
+              <small class="text-body-secondary">1h 47m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col" data-genre="comedy" data-actor="vince vaughn, owen wilson">
+        <div class="card shadow-sm">
+          <img src="./movies/Comedy/Wedding Crashers.jpg" width="348" height="464" class="card-img-top" alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">Jeremy (Vince Vaughn) and John (Owen Wilson) are divorce mediators who spend their free
+              time crashing wedding receptions. For the irrepressible duo, there are few better ways to drink for free
+              and bed vulnerable women.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/GnD48PD84-8?si=pRKCNmBqSQbGDrvh">View Trailer</button>
+              </div>
+              <small class="text-body-secondary">1h 59m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col" data-genre="fantasy" data-actor="Madilyn kellam, madelyn kientz">
+        <div class="card shadow-sm">
+          <img src="./movies/Fantasy/Fantastic pet.jpg" width="348" height="464" class="card-img-top" alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">
+              Scott and Emily are at his grandmother's home when they suddenly discover a mysterious creature. They have
+              a mission: with the help of an ancient spell book, they'll gather some ingredients to make a magic dust to
+              save their world.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/GBK8bTI-xc0?si=b3uYy-Pf8FnR_uR8">View Trailer</button>
+              </div>
+              <small class="text-body-secondary">1h 25m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col" data-genre="fantasy" data-actor="Daniel radcliffe, emma watson, rupert grint">
+        <div class="card shadow-sm">
+          <img src="./movies/Fantasy/Harry Potter and the order of the fenix.jpg" width="348" height="464"
+            class="card-img-top" alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">During the summer holidays, Harry Potter and his cousin Dudley are attacked by
+              Dementors. Harry uses magic to defeat them but his aunt and uncle blame him for the attack. Harry meets
+              the Order of the Phoenix, a group of good witches and wizards who want to fight the Death Eaters.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/WIj9DYJ5EKk?si=tSV-Zv-8B7qs1nIS">View Trailer</button>
+              </div>
+              <small class="text-body-secondary">2h 18m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col" data-genre="fantasy" data-actor="jennifer lawrence, josh hutcherson, woody harrelson">
+        <div class="card shadow-sm">
+          <img src="./movies/Fantasy/Hunger games.jpg" width="348" height="464" class="card-img-top" alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">As punishment for a failed rebellion many years before, each district must annually
+              choose two tributes, one boy and one girl between the ages of twelve and eighteen, to fight to the death
+              in the annual Hunger Games, until one victor remains.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/PbA63a7H0bo?si=FyowADY29eEFBhuU">View Trailer</button>
+              </div>
+              <small class="text-body-secondary">2h 22m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col" data-genre="fantasy"
+        data-actor="Anna kendrick, james corden, jhonny depp, billy magnussen, Meryl streep">
+        <div class="card shadow-sm">
+          <img src="./movies/Fantasy/Into the woods.jpg" width="348" height="464" class="card-img-top" alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">The film is centered on a childless couple who set out to end a curse placed on them by
+              a vengeful witch, and the characters are forced to experience the unintended consequences of their
+              actions.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/sNVGDZHRJXM?si=i66VTIAqjR0v5g0V">View Trailer</button>
+              </div>
+              <small class="text-body-secondary">2h 5m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col" data-genre="fantasy" data-actor="Sean Bean, Famke Janssen, Nick Stahl">
+        <div class="card shadow-sm">
+          <img src="./movies/Fantasy/Knights of the zodiac.jpg" width="348" height="464" class="card-img-top"
+            alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">Based on the international anime sensation, Knights of the Zodiac brings the Saint
+              Seiya saga to the big screen in live-action for the first time.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/Sko0o_KoBHY?si=MPeqWCqWMpa8hp2j">View Trailer</button>
+              </div>
+              <small class="text-body-secondary">1h 52m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col" data-genre="fantasy" data-actor="Paul Giamatti,Bryce Dallas Howard ">
+        <div class="card shadow-sm">
+          <img src="./movies/Fantasy/Lady in the water.jpg" width="348" height="464" class="card-img-top"
+            alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">When Cleveland Heep (Paul Giamatti) rescues an enigmatic young woman (Bryce Dallas
+              Howard) from danger, little does he know that she is a character from a bedtime story, who is trying to
+              return to her world. Distributor: Warner Bros.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/pKR1mfrfGAo?si=qBQ2PWnrEOZm-Lvb">View Trailer</button>
+              </div>
+              <small class="text-body-secondary">1h 50m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col" data-genre="fantasy" data-actor="Robert Sheehan,Ronan Raftery">
+        <div class="card shadow-sm">
+          <img src="./movies/Fantasy/Mortal engines.jpg" width="348" height="464" class="card-img-top" alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">In a post-apocalyptic world where cities ride on wheels and consume each other to
+              survive, two people meet in London and try to stop a conspiracy.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/IRsFc2gguEg?si=AotkOcQmnAxfMlLo">View Trailer</button>
+              </div>
+              <small class="text-body-secondary">2h 8m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col" data-genre="fantasy" data-actor="Doug Jones">
+        <div class="card shadow-sm">
+          <img src="./movies/Fantasy/Pan's Labyrinth.jpg" width="348" height="464" class="card-img-top" alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">In the Falangist Spain of 1944, the bookish young stepdaughter of a sadistic army
+              officer escapes into an eerie but captivating fantasy world.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/jVZRnnVSQ8k?si=HreH3n9lqeuMSrg5">View Trailer</button>
+              </div>
+              <small class="text-body-secondary">1h 59m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col" data-genre="fantasy" data-actor="Emma Watson, Dan Stevens">
+        <div class="card shadow-sm">
+          <img src="./movies/Fantasy/The beauty and the beast.jpg" width="348" height="464" class="card-img-top"
+            alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">A young Prince, imprisoned in the form of a Beast (Dan Stevens), can be freed only by
+              true love. What may be his only opportunity arrives when he meets Belle (Emma Watson), the only human girl
+              to ever visit the castle since it was enchanted.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/OvW_L8sTu5E?si=7kv6zOFFjBlSO5nT">View Trailer</button>
+              </div>
+              <small class="text-body-secondary">1h 24m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col" data-genre="fantasy" data-actor="Louis Ashbourne Serkis">
+        <div class="card shadow-sm">
+          <img src="./movies/Fantasy/The kid who would be king.jpg" width="348" height="464" class="card-img-top"
+            alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">The plot follows a young boy who finds King Arthur's legendary sword Excalibur and must
+              use it to stop an ancient enchantress from enslaving the world with help from his classmates (and former
+              bullies) from school.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/Cg-h8TwQCgs?si=1MeIRW308MlUUOVW">View Trailer</button>
+              </div>
+              <small class="text-body-secondary">2h</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col" data-genre="fantasy" data-actor="Sam Everingham">
+        <div class="card shadow-sm">
+          <img src="./movies/Fantasy/The secret kingdom.jpg" width="348" height="464" class="card-img-top"
+            alt="Thumbnail">
+          <div class="card-body">
+            <p class="card-text">Hidden beneath their bedroom floor lies a land of enchantment, which must be protected
+              from an ancient enemy </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="Payments.html" class="btn btn-sm btn-outline-primary" role="button">Rent</a>
+                <!-- Add data-trailer-url attribute with the movie's trailer URL -->
+                <button type="button" class="btn btn-sm btn-outline-primary trailer-btn" data-toggle="modal"
+                  data-target=".bd-example-modal-lg"
+                  data-trailer-url="https://www.youtube.com/embed/JTY06xlVGHA?si=Pj2OzWjrG5rW8hSb">View Trailer</button>
+              </div>
+              <small class="text-body-secondary">1h 59m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+      <script src="customScript.js"></script>
+</body>
+
 </html>
